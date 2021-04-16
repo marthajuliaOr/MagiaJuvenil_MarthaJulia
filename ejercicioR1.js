@@ -19,10 +19,10 @@ var pago = prompt ( "Porfavor, ingresa la cantidad a pagar: " ); //este valor se
 
 //chocolate
 if ( ( codigo == "xc23" ) && ( pago == 12.5 ) ) { //si el código es "xc23" y el pago es exacto, 
-    console.log ( "¡Compra de chocolate exitosa!" ); //se imprimirá el mensaje de ""¡Compra de chocolate exitosa!"
+    console.log ( "¡Compra de chocolate exitosa!" ); //se imprimirá el mensaje de "¡Compra de chocolate exitosa!"
 }
 else if ( ( codigo == "xc23" ) && ( pago > 12.5 ) ) { //si el código es "xc23" y el pago es mayor al obligatorio, 
-    console.log ( "¡Compra de chocolate exitosa!" ); //se imprimirá el mensaje de ""¡Compra de chocolate exitosa!"
+    console.log ( "¡Compra de chocolate exitosa!" ); //se imprimirá el mensaje de "¡Compra de chocolate exitosa!"
     console.log ( "Su cambio es " + ( pago - 12.5 ) );//y el cambio que se debe entregar
 }
 else if ( ( codigo == "xc23" ) && ( pago < 12.5 ) ) { //si el código  es "xc23" y el pago es insuficiente,, 
@@ -69,7 +69,7 @@ else if ( ( codigo == "l3k8" ) && ( pago < 9.10 ) ) {
     console.log ( "Porfavor, revise la informaión ingresada" );
 }
 
-/*esta condición la agregue por si el codigo ingresado no es correcto,
+/*esta condición la agregue por si el código ingresado no es correcto,
   no fue necesario hacer especificaciones ya que al descartar todas las opciones correctas, 
   el codigo no debe ser existente dentro de lo válido */
 
@@ -77,6 +77,6 @@ else {
     console.log ("Porfavor, ingrese un código válido"); 
 }
 
-/* Creo que esto podrí resolverse también con un condicional switch, o incluso mostrando las opciones de compra y,
+/* Creo que esto podría resolverse también con un condicional switch, o incluso mostrando las opciones de compra y,
 partiendo de ahí, dar a conocer el precio del producto. Pero, creo que para mantenerlo simple y tenerlo como práctica
 de "if", "else if" y operadores básicos queda bastante bien :D */
